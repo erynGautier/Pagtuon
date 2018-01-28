@@ -1,0 +1,337 @@
+/*style.css
+Copyright © 2018 Eryn Gautier <egautier@hewittschool.org>
+License: GNU GPL*/
+
+body {
+    font-family: 'Special Elite';
+    font-size: 42px;
+}
+            
+#mainContentDiv{
+    border:none;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left:0;
+    right: 0;
+    position: absolute;
+}
+
+.navBar{
+    width: 100%;
+    height: 2.5em;
+    /*background-color: #3ea045;*/
+    /*background-color: #47afc6;*/
+    /*background-color: #00baa1;*/
+    background-color: #a82b6e;
+}
+
+#logo{
+    font-family: 'Fredericka the Great';font-size: 1.75em;
+    float: left;
+    color: #fcc29c;
+    margin:0;
+    padding:0;
+    margin-top: 0.1em;
+    padding-left: 0.25em;
+}
+
+ul#navigation{
+    width: 40%;
+    list-style-type: none;
+    display: block;
+    float: right;
+    margin:0;
+    padding:0;
+}
+
+#navigation li{
+    width: calc(100%/3);
+    display: inline-block;
+    padding:0;
+    text-align: center;
+    float: left;
+}
+
+#navigation img{
+    width: 25%;
+    margin-top: 0.25em;
+    height: auto;
+    display: inline-block;
+}
+
+ul#homeNavigation{
+    width: 100%;
+    list-style-type: none;
+    display: block;
+    float: right;
+    margin:0;
+    padding:0;
+}
+
+#homeNavigation li{
+    width: calc(100%/3);
+    display: inline-block;
+    padding:0;
+    text-align: center;
+    float: left;
+}
+
+#homeNavigation img{
+    width: 15%;
+    margin-top: 0.25em;
+}
+            
+.header {
+    font-size: 22px;
+    margin:0;
+    padding-top: 1em;
+    width: 100%;
+    color: #2d2d2d;
+    text-align: center;
+    border-width: 0px;
+    /*background-color: lightgrey;*/
+}
+
+.pageHeader{
+    font-size: 5em;
+    text-align: center;
+    border-bottom: 4px solid #00baa1;
+    margin: auto;
+    margin-bottom: 0.1em;
+    padding: 0;
+    line-height: 0.85em;
+}
+
+.pageSubheader{
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 1.25em;
+    color: #636363;
+}
+
+/*button{
+    float: right;
+    display: inline-block;
+    background-size: cover;
+    border: 4px solid hotpink;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 0.75em;
+    padding-left:0.25em;
+    padding-right:0.25em;
+}*/
+
+.wrapper{
+    font-size: 22px;
+}
+
+#question, #questionNumber{
+    margin-left: 2em;
+    font-size: 1.2em;
+}
+
+#next img{
+    width: 100%;
+    height: auto;
+}
+
+#next{
+    display: inline-block;
+    float: right;
+    width: 20%;
+    margin-right: 1em;
+    border:none;
+    /*border: 1px solid rgb(214, 214, 214);
+    border-radius: 5px;
+    box-shadow: 0px 6px 0px rgb(214, 214, 214), 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);*/
+}
+
+.answers{
+    width: 75%;
+    margin:auto;
+}
+
+.answerButton{
+    width: 45%;
+    display: inline-block;
+    float: left;
+    font-size: 1em;
+    /*border: 4px dotted;*/
+    border: none;
+    margin: 0.25em 0.25em;
+    box-sizing: border-box;
+}
+
+.answerButton img{
+    width: 100%;
+    height: auto;
+}
+
+.stats{
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.meter {
+    height: 20px;
+    position: relative;
+    background: #2d2d2d;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    padding: 5px;
+    box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+
+.meter > span {
+    display: block;
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(43, 186, 161);
+    background-image: linear-gradient( center bottom, rgb(43,194,83) 37%, rgb(84,240,84) 69% );
+    box-shadow: inset 0 2px 9px rgba(255,255,255,0.3), inset 0 -2px 6px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+#winner img{
+    width: 10%;
+    height: auto;
+    display: inline-block;
+}
+
+#winner p{
+    margin: 10px 0px;
+}
+
+#winner{
+    width: 100%;
+    font-family: 'Fredericka the Great';
+    font-size: 2.5em;
+    text-align: center;
+    color: #a82b6e;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+#level{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 0.9em;
+}
+
+#progressBar{
+    margin-top: 0.5em;
+}
+
+#coins{
+    width: 40%;
+    display: inline-block;
+    margin-left: 8em;
+}
+
+#coins img{
+    width: 30%;
+    height: auto;
+    display: inline-block;
+}
+
+#coins p{
+    display: inline-block;
+    margin-left: 2em;
+}
+
+#bucks{
+    width: 40%;
+    display: inline-block;
+    float: right;
+}
+
+#bucks img{
+    width: 15%;
+    height: auto;
+    display: inline-block;
+}
+
+#bucks p{
+    display: inline-block;
+    margin-left: 3em;
+}
+
+#leaderboard{
+    margin:0;
+    padding:0;
+}
+
+table{
+    width: 100%;
+    background-color: #2bbaa1;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+table img{
+    width: 25%;
+}
+
+.profilePic{
+    width: 8em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.ad{
+    width: 100%;
+}
+
+.description{
+    margin-left: 2em;
+    margin-right: 2em;
+    font-size: 0.75em;
+}
+
+#startQuiz, #startQuiz img{
+    width: 50%;
+    margin:auto;
+    border:none;
+}
+
+.subject{
+    font-family: 'Special Elite';
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+    border: none;
+    background-color: #fcc29c;
+    margin-top: 0.5em;
+    padding-top: 0.25em;
+    text-decoration: none;
+    color: #2d2d2d;
+}
+
+.topic{
+    font-family: 'Special Elite';
+    text-decoration: none;
+    margin:auto;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    padding-top: 0.2em;
+    font-size: 1em;
+    border:none;
+}
+
+a{
+    text-decoration: none;
+    color: #2d2d2d;
+}
+
+a:hover, a:active{
+    color: #4c4c4c;
+}
+

@@ -1,0 +1,55 @@
+<!-- subjectPage.html
+Copyright © 2018 Eryn Gautier <egautier@hewittschool.org>
+License: GNU GPL -->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Fredericka the Great' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Special Elite' rel='stylesheet'>
+        <script src="questions.js"></script>
+        <title>Profile</title>
+    </head>
+
+    <body onload="show()">
+        <div id="mainContentDiv">
+            <div class="navBar">
+                <a href="homePage.html"><p id="logo">Pagtuon</p></a>
+                <ul id="navigation">
+                  <li><a href="homePage.html"><img src="home.png" alt="Home"></a></li>
+                  <li><a href="leaderboardPage.html"><img src="leaderboard.png" alt="Leaderboard"></a></li>
+                  <li><a href="profilePage.html"><img src="profile.png" alt="Profile"></a></li>
+                </ul>
+            </div>
+            <div class="header">
+                <!-- PAGE HEADER -->
+                <p class="pageHeader" style="width: 4.5em;">Subject Choice</p>
+            </div>
+
+            <button class="subject" onClick="expandIt('math'); return false;">Math</button>
+            <div id="math" style="display:none;">
+                <button class="topic"><a href="quizPage.html">Algebra Quiz</a></button>
+                <button class="topic"><a href="">Trig Quiz</a></button>
+                <button class="topic"><a href="">Geometry Quiz</a></button>
+                <button class="topic"><a href="">Calculus Quiz</a></button>
+            </div>
+
+            <button class="subject" onClick="expandIt('science'); return false;">Science</button>
+            <div id="science" style="display:none;">
+                <button class="topic"><a href="quizPage.html">Physics Quiz</a></button>
+                <button class="topic"><a href="">Chemistry Quiz</a></button>
+                <button class="topic"><a href="">Biology Quiz</a></button>
+                <button class="topic"><a href="">Human Geography Quiz</a></button>
+            </div>
+
+            <button class="subject" onClick="expandIt('history'); return false;">History</button>
+            <div id="history" style="display:none;">
+                <button class="topic"><a href="quizPage.html">Art History Quiz</a></button>
+                <button class="topic"><a href="">European History Quiz</a></button>
+                <button class="topic"><a href="">Global History Quiz</a></button>
+            </div>
+        </div>
+    </body>
+</html>

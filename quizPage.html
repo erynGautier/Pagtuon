@@ -1,0 +1,67 @@
+<!-- quizPage.html
+Copyright © 2018 Eryn Gautier <egautier@hewittschool.org>
+License: GNU GPL -->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Fredericka the Great' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Special Elite' rel='stylesheet'>
+        <script src="questions.js"></script>
+        <title>Algebra Quiz</title>
+    </head>
+
+    <body onload="show()">
+        <div id="mainContentDiv">
+            <div class="navBar">
+                <a href="homePage.html"><p id="logo">Pagtuon</p></a>
+                <ul id="navigation">
+                  <li><a href="homePage.html"><img src="home.png"></a></li>
+                  <li><a href="leaderboardPage.html"><img src="leaderboard.png"></a></li>
+                  <li><a href="profilePage.html"><img src="profile.png"></a></li>
+                </ul>
+            </div>
+            <div class="header">
+                <!-- QUIZ SUBJECT HEADER -->
+                <p class="pageHeader" style="width: 2.5em;">math</p>
+                <!-- QUIZ TOPIC HEADER -->
+                <p class="pageSubhead">algebra quiz</p>
+            </div>
+    
+            <div class="wrapper">
+    
+                <!-- QUESTION NUMBER/QUESTION -->
+                <p id="questionNumber"></p>
+                <p id="question"></p>
+    
+                <!-- QUESTION ANSWER CHOICES -->
+                <div class="answers">
+                    <div id="answerChoice1"></div>
+                    <div id="answerChoice2"></div>
+                    <div id="answerChoice3"></div>
+                    <div id="answerChoice4"></div>
+                </div>
+
+    
+                <!-- NEXT BUTTON -->
+                <div id="nextButton"></div>
+
+
+                <!-- RESULTS PAGE -->
+                <div class="resultsPage">
+                    <div class="stats">
+                        <p id="winner"></p>
+                        <p id="level"></p>
+                        <p id="progressBar"></p>
+                        <p id="coins"></p>
+                        <p id="bucks"></p>
+                    </div>
+                    <p id="leaderboard"></p>
+                </div>
+    
+            </div>
+        </div>
+    </body>
+</html>

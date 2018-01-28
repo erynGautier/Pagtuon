@@ -1,0 +1,79 @@
+<!-- profilePage.html
+Copyright © 2018 Eryn Gautier <egautier@hewittschool.org>
+License: GNU GPL -->
+
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Fredericka the Great' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Special Elite' rel='stylesheet'>
+        <script src="questions.js"></script>
+        <title>Profile</title>
+    </head>
+
+    <body onload="show()">
+        <div id="mainContentDiv">
+            <div class="navBar">
+                <a href="homePage.html"><p id="logo">Pagtuon</p></a>
+                <ul id="navigation">
+                  <li><a href="homePage.html"><img src="home.png" alt="Home"></a></li>
+                  <li><a href="leaderboardPage.html"><img src="leaderboard.png" alt="Leaderboard"></a></li>
+                  <li><a href="profilePage.html"><img src="profile.png" alt="Profile"></a></li>
+                </ul>
+            </div>
+            <div class="header">
+                <!-- PAGE HEADER -->
+                <p class="pageHeader" style="width: 5.5em;">Mr. Popper</p>
+                <!-- PAGE SUBHEADER -->
+                <p class="pageSubheader">Rank #1</p>
+
+                <img class="profilePic" src="penguin-avatar.PNG">
+            </div>
+
+
+            <div class="stats" style="margin-top:1em;">
+                <p id="level" style="font-size:0.6em;">Level 15 - earn 16 more points to reach the next level</p>
+                <div class="meter"><span style="width: 90%"></span></div>
+
+                <div style="display:inline-block; float:left; width:50%; margin-top:1em;">
+                    <img src="coins.PNG" style="width:30%; display:inline-block;">
+                    <p style="display:inline-block; margin-left:2em; font-size:0.5em;">142345 coins</p>
+                </div>
+                <div style="display:inline-block; float:right; width:50%; margin-top:1em;">
+                    <img src="dollar.PNG" style="width:16%; display:inline-block;">
+                    <p style="display:inline-block; margin-left:2em; font-size:0.5em;">312 bucks</p>
+                </div>
+            </div>
+
+            <div class="ad">
+                <a href="https://www.amazon.com/gp/dmusic/promotions/PrimeMusic"><img src="amazonAd.jpg" style="width:100%;"></a>
+            </div>
+
+            <div class="availableItems">
+                <p>You can afford these items:</p>
+                <table style="background-color:white;">
+                    <tr>
+                        <th style="width:5em; text-align:center;"><img src="ebook.png" style="width:50%;"><p style="margin:0; font-size:0.5em;">E-Book</p></th>
+                        <th style="text-align:center;"><p>100000 coins</p></th>
+                        <th style="text-align:center; color:#a82b6e;"><p style="cursor: pointer;">ORDER</p></th>
+                    </tr>
+                    <tr>
+                        <th style="width:5em; text-align:center;"><img src="highlighter.jpg" style="width:50%;"><p style="margin:0; font-size:0.5em;">Highlighters</p></th>
+                        <th style="text-align:center;"><p>550 coins</p></th>
+                        <th style="text-align:center; color:#a82b6e;"><p style="cursor: pointer;">ORDER</p></th>
+                    </tr>
+                    <tr>
+                        <th style="width:5em; text-align:center;"><img src="backToSchool.jpg" style="width:50%;"><p style="margin:0; font-size:0.5em;">Back to School Set</p></th>
+                        <th style="text-align:center;"><p>140000 coins</p></th>
+                        <th style="text-align:center; color:#a82b6e;"><p style="cursor: pointer;">ORDER</p></th>
+                    </tr>
+                </table>
+            </div>
+
+    
+        </div>
+    </body>
+</html>
